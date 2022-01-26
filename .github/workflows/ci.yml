@@ -2,6 +2,7 @@ name: CI
 on:
   push:
 env:
+  FORCE_COLOR: true
   NODE_VERSION: 16
 jobs:
   lint:
@@ -26,3 +27,5 @@ jobs:
         run: yarn install --immutable
       - name: Check code quality
         run: yarn lint
+        env:
+          FORCE_COLOR: false
