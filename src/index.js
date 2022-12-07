@@ -1,7 +1,8 @@
 import assert from 'node:assert/strict'
 
 const hello = message => `Hello ${message}`
-const output = hello('world')
+var output = hello('world')
+  const result = 'unused variable'
 
 console.log(output)
 
